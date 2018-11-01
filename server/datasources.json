@@ -2,5 +2,15 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "mongoDS": {
+    "host": "ds043324.mlab.com",
+    "port": 43324,
+    "url": "",
+    "database": "lms",
+    "password": "lmsapp123",
+    "name": "mongoDS",
+    "user": "lmsapp",
+    "connector": "mongodb"
   }
 }
