@@ -38,5 +38,9 @@
   "newuser": {
     "dataSource": "mongoDS",
     "public": true
+  },
+  "teacher": {
+    "dataSource": "mongoDS",
+    "public": true
   }
 }
