@@ -1,0 +1,58 @@
+{
+    "name": "Course",
+    "plural": "courses",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+      "validateUpsert": true
+    },
+    "properties": {
+	  "code": {
+        "type": "string",
+        "required": true
+      },
+      "title": {
+        "type": "string",
+        "required": true
+      },
+	  "lecturer": {
+        "type": "string",
+        "required": true
+      },
+      "introduction": {
+        "type": "string",
+        "required": true
+      },
+      "start_date": {
+        "type": "string",
+        "required": true
+      },
+      "end_date": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "validations": [],
+    "relations": {
+      "teacher": {
+        "type": "belongsTo",
+        "model": "Teacher",
+        "foreignKey": "",
+        "options": {
+          "nestRemoting": true
+        }
+      },
+      "students": {
+        "type": "hasMany",
+        "model": "Student",
+        "foreignKey": "",
+        "options": {
+          "nestRemoting": true
+        },
+        "through": "Enrol"
+      }
+    },
+    "acls": [],
+    "methods": {}
+  }
+  
