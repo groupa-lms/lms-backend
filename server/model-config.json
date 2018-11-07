@@ -39,7 +39,7 @@
     "dataSource": "mongoDS",
     "public": true
   },
-  "teacher": {
+  "Teacher": {
     "dataSource": "mongoDS",
     "public": true
   },
