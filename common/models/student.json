@@ -1,33 +1,33 @@
 {
-    "name": "Course",
-    "plural": "courses",
+    "name": "Student",
+    "plural": "students",
     "base": "PersistedModel",
     "idInjection": true,
     "options": {
       "validateUpsert": true
     },
     "properties": {
-	  "code": {
+	  "studentId": {
         "type": "string",
         "required": true
       },
-      "title": {
+      "name": {
         "type": "string",
         "required": true
       },
-	  "lecturer": {
+	  "grade": {
         "type": "string",
         "required": true
       },
-      "introduction": {
+      "major": {
         "type": "string",
         "required": true
       },
-      "start_date": {
+      "age": {
         "type": "string",
         "required": true
       },
-      "end_date": {
+      "gender": {
         "type": "string",
         "required": true
       },
@@ -38,25 +38,7 @@
       }
     },
     "validations": [],
-    "relations": {
-      "teacher": {
-        "type": "belongsTo",
-        "model": "Teacher",
-        "foreignKey": "",
-        "options": {
-          "nestRemoting": true
-        }
-      },
-      "students": {
-        "type": "hasMany",
-        "model": "Student",
-        "foreignKey": "",
-        "options": {
-          "nestRemoting": true
-        },
-        "through": "Enrol"
-      }
-    },
+    "relations": {},
     "acls": [],
     "methods": {}
   }

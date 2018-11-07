@@ -43,6 +43,10 @@
     "dataSource": "mongoDS",
     "public": true
   },
+  "Student": {
+    "dataSource": "mongoDS",
+    "public": true
+  },
   "Course": {
     "dataSource": "mongoDS",
     "public": true
