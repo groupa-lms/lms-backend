@@ -1,20 +1,14 @@
 {
-  "name": "Student",
-  "plural": "students",
+  "name": "Admin",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "userID": {
+    "userId": {
       "type": "string",
       "required": true
-    },
-    "disabled": {
-      "type": "boolean",
-      "required": true,
-      "default": false
     }
   },
   "validations": [],

@@ -1,6 +1,5 @@
 {
-  "name": "Teacher",
-  "plural": "teachers",
+  "name": "Grade",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -11,28 +10,21 @@
       "type": "string",
       "required": true
     },
-    "title": {
+    "courseID": {
       "type": "string",
       "required": true
     },
-    "department": {
+    "grade": {
       "type": "string",
       "required": true
     },
-    "disabled": {
-      "type": "boolean",
-      "required": true,
-      "default": false
+    "date": {
+      "type": "date",
+      "required": true
     }
   },
   "validations": [],
-  "relations": {
-    "newUsers": {
-      "type": "belongsTo",
-      "model": "NewUser",
-      "foreignKey": "userID"
-    }
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }

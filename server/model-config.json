@@ -35,7 +35,7 @@
     "dataSource": "db",
     "public": false
   },
-  "newuser": {
+  "NewUser": {
     "dataSource": "mongoDS",
     "public": true
   },
@@ -48,6 +48,22 @@
     "public": true
   },
   "Course": {
+    "dataSource": "mongoDS",
+    "public": true
+  },
+  "Admin": {
+    "dataSource": "mongoDS",
+    "public": true
+  },
+  "CourseEnrollment": {
+    "dataSource": "mongoDS",
+    "public": true
+  },
+  "Grade": {
+    "dataSource": "mongoDS",
+    "public": true
+  },
+  "CourseTeacher": {
     "dataSource": "mongoDS",
     "public": true
   }
