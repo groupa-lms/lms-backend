@@ -29,6 +29,10 @@
     "UserRole": {
       "type": "string",
       "required": true
+    },
+    "Gender": {
+      "type": "string",
+      "required": true
     }
   },
   "validations": [],
