@@ -19,4 +19,3 @@ deploy:
   skip_cleanup: true
   region: "ap-southeast-2"
   acl: public_read
-  local_dir: build
