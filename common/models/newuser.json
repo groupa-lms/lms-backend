@@ -1,11 +1,40 @@
 {
-  "name": "newuser",
+  "name": "NewUser",
   "base": "User",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
-  "properties": {},
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "FirstName": {
+      "type": "string",
+      "required": true
+    },
+    "LastName": {
+      "type": "string",
+      "required": true
+    },
+    "DOB": {
+      "type": "date",
+      "required": true
+    },
+    "DateOfJoin": {
+      "type": "date",
+      "required": true
+    },
+    "UserRole": {
+      "type": "string",
+      "required": true
+    },
+    "Gender": {
+      "type": "string",
+      "required": true
+    }
+  },
   "validations": [],
   "relations": {},
   "acls": [],
