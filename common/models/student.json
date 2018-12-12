@@ -25,6 +25,12 @@
       "foreignKey": "userID"
     }
   },
-  "acls": [],
+  "acls": [
+   {  "accessType":"WRITE",
+      "principalType": "USER",
+      "principalId": "5c0de8fdd5bc891ae48840bd",
+      "permission": "ALLOW"
+    }
+  ],
   "methods": {}
 }
