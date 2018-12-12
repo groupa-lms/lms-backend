@@ -31,6 +31,11 @@
       "type": "belongsTo",
       "model": "NewUser",
       "foreignKey": "userID"
+    },
+	"courses": {
+      "type": "hasMany",
+      "model": "Course",
+      "foreignKey": "teacherId"
     }
   },
   "acls": [],

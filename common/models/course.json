@@ -15,7 +15,15 @@
       "type": "string",
       "required": true
     },
-    "desctription": {
+	"teacherId": {
+      "type": "string",
+      "required": true
+    },
+	"faculty": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
       "type": "string",
       "required": true
     },
@@ -35,10 +43,10 @@
   },
   "validations": [],
   "relations": {
-    "teacher": {
+    "teachers": {
       "type": "belongsTo",
       "model": "Teacher",
-      "foreignKey": "",
+      "foreignKey": "teacherId",
       "options": {
         "nestRemoting": true
       }
